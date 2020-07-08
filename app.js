@@ -28,7 +28,7 @@ function getNumFact() {
     let number = numInput.value;
 
     if(number != ''){
-        fetch(`http://numbersapi.com/${number}`)
+        fetch(`https://numbersapi.com/${number}`)
         .then(response => response.text())
         .then(data => {
             fact.style.display = 'block';
