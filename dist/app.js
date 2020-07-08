@@ -28,7 +28,7 @@ function getNumFact() {
     let number = numInput.value;
 
     if(number != ''){
-        fetch(`http://numbersapi.com/${number}`)
+        fetch(`https://numbersapi.com/${number}`)
         .then(response => response.text())
         .then(data => {
             fact.style.display = 'block';
@@ -42,7 +42,7 @@ function getYearFact() {
     let number = yearInput.value;
 
     if(number != ''){
-        fetch(`http://numbersapi.com/${number}/year`)
+        fetch(`https://numbersapi.com/${number}/year`)
         .then(response => response.text())
         .then(data => {
             fact.firstElementChild.textContent = 'Year Fact';
